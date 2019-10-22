@@ -68,7 +68,7 @@ textarea{
   border-radius: 20px;
   width:25%;
   height: 30px;
-  font-family: cursive;
+  font-family:Arial, Helvetica, sans-serif;
   cursor:pointer;
 }
 .button:hover{
