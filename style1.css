@@ -12,18 +12,15 @@ display: none;
 .modal-content
 {
  width: 500px;
- background-color: white;
-
+background-image:linear-gradient(to bottom, white, rgba(0, 0, 0, 0.664));
 padding-top :10px;
 padding-bottom: 10px;
 position: relative;
-border-style:inset ;
-border-color:rgba(94, 91, 92, 0.719);
 border-top-width: 5px;
 border-left-width: 5px;
-border-radius:10px;
+border-radius:0px;
 box-sizing: border-box;
-box-shadow: 0 15px 25px rgba(0,0,0,.5);
+box-shadow: 0 15px 25px;
 }
 .logo{
   height:50%;
@@ -35,6 +32,8 @@ input{
   height:25px;
   display:block;
   margin:15px auto;
+  margin-left:30px;
+  
 }
 
 .select_panel{
@@ -45,31 +44,36 @@ input{
   height:30px;
   border-radius:3px;
   border-color:rgb(0, 0, 0);
+  background:rgb(255, 255, 255,0.7);
   font-family:Arial, Helvetica, sans-serif;
-  color:gray;
+  color:black;
   outline:none;
 
 }
 textarea{
-  width:90%;
+  width:88%;
+  height:100px;
   font-family:Arial, Helvetica, sans-serif;
   color:black;
   font-size:15px;
   border-radius: 5px;
   border-color:rgb(0, 0, 0);
   outline:none;
+  background: white;
+  border-style: inset;
 }
 
 
 .button{
-  background-color: deepskyblue;
-  color:white;
-  padding: 5px;
-  border-radius: 20px;
-  width:25%;
+  background-color: rgba(231, 236, 238, 0.863);
+  color:black;
+  border-radius: 5px;
+  text-align:center;
+  width:80px;
   height: 30px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   cursor:pointer;
+  font-size: 15px;
 }
 .button:hover{
   background-color: white;
@@ -79,12 +83,12 @@ textarea{
 
 .close{
   position:absolute;
-  top: 5px;
+  top: 10px;
   right: 17px;
   font-size: 30px;
   transform: rotate(45deg);
   cursor: pointer;
-  color:gray;
+  color:white;
 }
 
 .feedbacktext{
@@ -92,16 +96,17 @@ textarea{
 }
 .input_box{
   position:relative;
+  
 }
 .input_box input{
-  width: 75%;
-  padding-left:30px;
+  width: 50%;
   padding-right:10px;
   border:none;
   border-bottom: 1px solid;
-  border-radius: 10px;
-  border-color:rgb(201, 9, 89);
+  border-radius: 0px;
+  border-color:black;
   font-size: 20px;
+  background:none;
   outline:none;
 }
 .input_box label{
@@ -111,34 +116,71 @@ top:-15px;
 left:0px;
 margin:15px;
 padding-bottom:0px;
-padding-left:60px;
-font-size: 20px;
+padding-left:20px;
+font-size: 17px;
 pointer-events: none;
 transition:0.5s;
-color: rgba(90, 85, 85, 0.863);
+color: rgba(0, 0, 0, 0.692);
 
 }
 .input_box input:focus~label{
-  top:-40px;
-  font-size:15px;
-  color: rgb(82, 6, 50);
+  top:-28px;
+  font-size:12px;
+  color:black;
   font-family:Arial, Helvetica, sans-serif;
   
 }
 .input_box input:valid~label{
-  top:-40px;
-  font-size:15px;
-  color: rgb(82, 6, 50);
+  top:-28px;
+  font-size:12px;
+  color: black;
   font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
+
 }
 .select_panel label{
-  color:blue;
+  color:white;
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
 }
 .feedbacktext label{
-  color:blue;
+  color:white;
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+}
+.strip{
+  position :absolute;
+  top:50px;
+  right:0px;
+  width: 500px;
+  height: 60px;
+  opacity: 0.6;
+}
+.bg-image{
+  top:100px;
+  width:500px;
+  height: 30%;
+  width: 30%;
+  padding-left: 100px;
+}
+.nitd{
+  position: absolute;
+  width: 20%;
+  right: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px;
+  top:0px;
+  }
+.feedback{
+  position: absolute;
+  top:68px;
+  left:25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color:white;
+}
+.submitbutton{
+  padding-left:350px;
+  margin-right:0px;
+  padding-right: 0px;
+
 }
